@@ -1,37 +1,83 @@
 <head>
-    <meta charset="utf-8" />
-    <title>SidebarMenu by Ninety-Niners.com</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="style2.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
-  
-  </head>
-  <body>
-    
-    <div class="container bar">
-        <label class="floatLeft" for="navBtn"><span></span></label>
-        <h2 class="floatLeft">HR Dashboard</h2>
-        <a href="user-profile.html"> <i class="fas fa-sign-out-alt floatLeft"></i></a>
-        <a href="login.html"> <i class="fas fa-sign-out-alt floatRight"></i></a>
+  <meta charset="utf-8" />
+  <title>SidebarMenu by Ninety-Niners.com</title>
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+  />
+  <link rel="stylesheet" type="text/css" href="style2.css" />
+  <link rel="stylesheet" type="text/css" href="custom.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+  <div class="sidebar">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+  <div class="container bar">
+    <h2 class="center">HR Dashboard</h2>
+  </div>
+  <div class="content">
+    <div class="chart-wrap vertical">
+      <h2 class="title">Bar Chart HTML Example: Using Only HTML And CSS</h2>
+
+      <div class="grid">
+        <div
+          class="bar2"
+          style="--bar-value: 85%"
+          data-name="Your Blog"
+          title="Your Blog 85%"
+        ></div>
+        <div
+          class="bar2"
+          style="--bar-value: 23%"
+          data-name="Medium"
+          title="Medium 23%"
+        ></div>
+        <div
+          class="bar2"
+          style="--bar-value: 7%"
+          data-name="Tumblr"
+          title="Tumblr 7%"
+        ></div>
+        <div
+          class="bar2"
+          style="--bar-value: 38%"
+          data-name="Facebook"
+          title="Facebook 38%"
+        ></div>
+        <div
+          class="bar2"
+          style="--bar-value: 35%"
+          data-name="YouTube"
+          title="YouTube 35%"
+        ></div>
+        <div
+          class="bar2"
+          style="--bar-value: 30%"
+          data-name="LinkedIn"
+          title="LinkedIn 30%"
+        ></div>
+        <div
+          class="bar2"
+          style="--bar-value: 5%"
+          data-name="Twitter"
+          title="Twitter 5%"
+        ></div>
+        <div
+          class="bar2"
+          style="--bar-value: 20%"
+          data-name="Other"
+          title="Other 20%"
+        ></div>
+      </div>
     </div>
-    <div class="container">
-        <input type="checkbox" class="navBtn" id="navBtn" />
-        <nav>
-            <ul>
-                <li>
-                    <a href="#"><i class="fa fa-heart"></i>First Link</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-medkit"></i>Second Link</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-heartbeat"></i>Third Link</a>
-                </li>
-                <li>
-                    <a href="#"><i class="fa fa-ambulance"></i>Forth Link</a>
-                </li>
-            </ul>
-        </nav>
-    </div>
-    
-  </body>
+  </div>
+</body>
