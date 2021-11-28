@@ -1,172 +1,77 @@
-/* ==========================================================================
-Google Fonts
-========================================================================== */
-@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic);
-/* ==========================================================================
-clearfix
-========================================================================== */
-.cf:before,
-.cf:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
+.container-body {
+    max-width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
-.cf:after {
-  clear: both;
-}
-
-.cf {
-  *zoom: 1;
-}
-
-/* ==========================================================================
-html, body and stuff
-========================================================================== */
-*,
-*:before,
-*:after {
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-body {
-  font-size: 100%;
-  font-family: "PT Sans", sans-serif;
-  background-color: #fbf3ff;
-}
-
-/* ==========================================================================
-text
-========================================================================== */
-.left {
-  text-align: left;
-}
-
-.center {
-  text-align: center;
-}
-
-.right {
-  text-align: right;
-}
-
-.justify {
-  text-align: justify;
-}
-
-.uppercase {
-  text-transform: uppercase;
-}
-
-/* ==========================================================================
-padding / margin
-========================================================================== */
-.padding1rem {
-  padding: 1rem;
-}
-
-.paddingRight2rem {
-  padding: 0 2rem 0 0;
-}
-
-/* ==========================================================================
-links
-========================================================================== */
-a {
-  color: white;
-}
-
-/* ==========================================================================
-headlines
-========================================================================== */
-/* ==========================================================================
-awesome Fonts
-========================================================================== */
-i {
-  color: #d1d4d9;
-  margin: 0 1rem 0 0;
-}
-
-/* ==========================================================================
-layout
-========================================================================== */
-.container {
-  max-width: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-}
-
-.bar {
-  color: white;
-  background: linear-gradient(45deg, #b229ea, #29eab8);
-  line-height: 3rem;
-  border: 1px solid grey;
+.custom-bar {
+    color: white;
+    background: linear-gradient(45deg, #b229ea, #29eab8);
+    height: 56px;
+    border: 1px solid grey;
 }
 
 h2 {
-  margin: 0px;
-  width: auto;
-  text-align: center;
+    margin: 0px;
+    width: auto;
+    text-align: center;
 }
 
 body {
-  margin: 0;
-  font-family: "Lato", sans-serif;
+    margin: 0;
+    font-family: "Lato", sans-serif;
 }
 
 .sidebar {
-  margin: 0;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
-  overflow: auto;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background: linear-gradient(45deg, #29eab8, #b229ea);
+    position: fixed;
+    height: 100%;
+    overflow: auto;
 }
 
 .sidebar a {
-  display: block;
-  color: black;
-  padding: 16px;
-  text-decoration: none;
+    display: block;
+    color: black;
+    padding: 16px;
+    text-decoration: none;
 }
 
 .sidebar a.active {
-  background-color: #04aa6d;
-  color: white;
+    background-color: lightgoldenrodyellow;
+    color: black;
 }
 
 .sidebar a:hover:not(.active) {
-  background-color: #555;
-  color: white;
+    background-color: #555;
+    color: white;
 }
 
 div.content {
-  margin-left: 200px;
-  padding: 1px 16px;
-  height: 1000px;
+    margin-left: 200px;
+    padding: 1px 16px;
+    height: 1000px;
 }
 
 @media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {
-    float: left;
-  }
-  div.content {
-    margin-left: 0;
-  }
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {
+        float: left;
+    }
+    div.content {
+        margin-left: 0;
+    }
 }
 
 @media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
 }
