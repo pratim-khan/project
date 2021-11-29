@@ -279,7 +279,7 @@
                     <div class="container-fluid">
                         <div class="row mb-2">
                             <div class="col-sm-6">
-                                <h1 class="m-0">Dashboard</h1>
+                                <h1 class="m-0">HR - Dashboard Template</h1>
                             </div>
                             <!-- /.col -->
                             <div class="col-sm-6">
@@ -299,7 +299,23 @@
                 <!-- Main content -->
                 <section class="content">
                     <div class="container-fluid">
-                        <h1>Hello World</h1>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="d-flex w-100">
+                                            <div id="chartContainer" class="w-100"></div>
+                                        </div>
+                                        <!-- /.d-flex -->
+
+                                        <div class="position-relative mb-4">
+                                            <canvas id="visitors-chart" height="360"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.card -->
                     </div>
                     <!-- /.container-fluid -->
                 </section>
@@ -353,5 +369,39 @@
         <script src="dist/js/demo.js"></script>
         <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
         <script src="dist/js/pages/dashboard.js"></script>
+        <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+        <script type="text/javascript">
+            window.onload = function () {
+                var chart = new CanvasJS.Chart("chartContainer", {
+                    title: {
+                        text: "Salary Range BreakDown",
+                    },
+                    axisY: {
+                        title: "",
+                        maximum: 40,
+                    },
+                    data: [
+                        {
+                            type: "bar",
+                            dataPoints: [
+                                { y: 0, label: "<20K", color: "gold" },
+                                { y: 0, label: "20K<30K", color: "gold" },
+                                { y: 0, label: "30K<40K", color: "gold" },
+                                { y: 38, label: "40K<50K", color: "gold" },
+                                { y: 15, label: "50K<60K", color: "gold" },
+                                { y: 8, label: "60K<70K", color: "gold" },
+                                { y: 11, label: "70K<80K", color: "gold" },
+                                { y: 0, label: "80K<90K", color: "gold" },
+                                { y: 0, label: "90K<100K", color: "gold" },
+                                { y: 4, label: ">100K", color: "gold" },
+                            ],
+                        },
+                    ],
+                });
+
+                chart.render();
+            };
+        </script>
     </body>
 </html>
