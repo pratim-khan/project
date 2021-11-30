@@ -68,6 +68,9 @@ window.onload = function () {
 
 // Chart 4: Stacked Bar Chart / SALARY BREAKDOWN BY DEPARTMENT
 var barOptions_stacked = {
+    title: {
+        text: "AVERAGE SALARY BY DEPARTMENT",
+    },
     tooltips: {
         enabled: false,
     },
@@ -154,15 +157,15 @@ var myChart = new Chart(ctx, {
 
         datasets: [
             {
-                data: [589, 537, 543, 574, 589, 537, 543, 574, 589, 537, 543, 574],
+                data: [1800, 537, 543, 574, 589, 537, 543, 574, 589, 537, 543, 574],
                 backgroundColor: "rgba(63,203,226,1)",
             },
             {
-                data: [589, 537, 543, 574, 589, 537, 543, 574, 589, 537, 543, 574],
+                data: [0, 100, 90, 100, 80, 120, 50, 100, 90, 120, 150, 0],
                 backgroundColor: "#5c9ad5",
             },
             {
-                data: [589, 537, 543, 574, 589, 537, 543, 574, 589, 537, 543, 574],
+                data: [0, 0, 0, 0, 0, 0, 30, 0,0, 0, 90, 0],
                 backgroundColor: "#d6844b",
             },
         ],
